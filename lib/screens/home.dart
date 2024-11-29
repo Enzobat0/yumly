@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yumly/screens/explore.dart';
 import 'package:yumly/screens/recipescreen.dart';
-import 'package:yumly/provider/meal_providers.dart'; // Add the meal provider for random recipe
+import 'package:yumly/provider/meal_providers.dart'; 
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -33,7 +33,7 @@ class HomeScreen extends ConsumerWidget {
                   alignment: Alignment.center,
                   child: Image.asset(
                     'images/logo.png',
-                    height: 100, // Adjust size as needed
+                    height: 100, 
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -75,7 +75,7 @@ class HomeScreen extends ConsumerWidget {
                         ),
                       ),
                       child: Row(
-                        mainAxisSize: MainAxisSize.min, // Ensures button wraps content
+                        mainAxisSize: MainAxisSize.min, 
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,7 +135,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                   child: Row(
-                    mainAxisSize: MainAxisSize.min, // Ensures button wraps content
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

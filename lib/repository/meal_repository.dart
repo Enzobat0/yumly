@@ -4,7 +4,7 @@ import 'package:yumly/models/meal_models.dart';
 import 'package:http/http.dart' as http;
 
 class MealRepository {
-  // Fetch a random meal (existing method)
+  // Fetch a random meal 
   Future<MealModel> getMeal() async {
     String url = "https://www.themealdb.com/api/json/v1/1/random.php";
     Uri uri = Uri.parse(url);
@@ -36,11 +36,11 @@ Future<List<MealModel>> getMealsByCategory(String category) async {
     }
 
     if (category.isEmpty || category == "All") {
-      // Parse detailed meals (response from `search.php?s=`)
+      // Parse detailed meals 
       return meals.map((meal) => MealModel.fromJson({'meals': [meal]})).toList();
     }
 
-    // Parse filtered meals (response from `filter.php?c=`)
+    // Parse filtered meals 
     return meals.map((meal) => MealModel.fromFilteredJson(meal)).toList();
   } else {
     throw Exception('Failed to load meals');

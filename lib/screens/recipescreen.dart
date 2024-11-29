@@ -34,7 +34,7 @@ class RecipeScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(meal.image ?? 
-                      'https://via.placeholder.com/300'), // Placeholder
+                      'https://p.kindpng.com/picc/s/79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png'), // Placeholder
                   fit: BoxFit.cover,
                 ),
               ),
@@ -76,7 +76,7 @@ class RecipeScreen extends StatelessWidget {
                       return Row(
                         children: [
                           Text(
-                            ingredient.name ?? '',
+                            ingredient.name ?? 'No name',
                             style: GoogleFonts.inter(
                               textStyle: const TextStyle(
                                 fontSize: 14,
@@ -86,7 +86,7 @@ class RecipeScreen extends StatelessWidget {
                           ),
                           const SizedBox(width: 10),
                           Text(
-                            ingredient.measure ?? '',
+                            ingredient.measure ?? 'No ingredients',
                             style: GoogleFonts.inter(
                               textStyle: const TextStyle(
                                 fontSize: 12,

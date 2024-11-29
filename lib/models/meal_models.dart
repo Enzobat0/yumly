@@ -46,7 +46,7 @@ class MealModel {
     );
   }
 
-  // Utility method to check if a meal is valid
+  
   bool isValid() {
     return id.isNotEmpty && name.isNotEmpty && image.isNotEmpty;
   }
