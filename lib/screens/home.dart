@@ -14,7 +14,7 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final screenHeight = MediaQuery.of(context).size.height;
 
-    // Fetch a random meal using a provider (you need to create this provider)
+    // Fetch a random meal using a provider
     final randomMeal = ref.watch(mealProvider);  
 
     return Scaffold(
