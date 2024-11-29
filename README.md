@@ -68,3 +68,6 @@ Solution: Used MediaQuery for dynamic sizing and wrapped content in scrollable w
 4. Button Differentiation
 Issue: Confusion between "Random Recipe" and "Explore More" buttons.
 Solution: Styled the "Explore More" button with a distinct color and text.
+
+# Links
+The MealDb: [https://www.themealdb.com/](url)
