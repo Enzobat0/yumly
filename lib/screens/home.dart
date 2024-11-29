@@ -15,7 +15,7 @@ class HomeScreen extends ConsumerWidget {
     final screenHeight = MediaQuery.of(context).size.height;
 
     // Fetch a random meal using a provider (you need to create this provider)
-    final randomMeal = ref.watch(mealProvider);  // Assuming you have a provider for random meal
+    final randomMeal = ref.watch(mealProvider);  
 
     return Scaffold(
       backgroundColor: Colors.black,
